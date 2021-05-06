@@ -1,0 +1,14 @@
+● src
++---● app
+|   +--● personagem-s
+|   |  |--personagem-s.component.ts|.html
+|   |  +--● personagem--form
+|   |  |  |--personagem--form.component.ts|.html
+|   |  
+|   +--● shared
+|   |  |--personagem-.service.ts
+|   |  |--personagem-.model.ts
+|   |
+|   |--app.module.ts
+|
+|--index.html (cdn path for bootstrap & fa icons)

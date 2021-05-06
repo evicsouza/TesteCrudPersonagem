@@ -1,0 +1,27 @@
+<div class="jumbotron py-3">
+    <h1 class="display-4 text-center">Cadastro de Personagem</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <app-personagem-form></app-personagem-form>
+    <div class="col-md-6">
+        <table class="table">
+            <thead class="thead-light">
+                <tr>
+                    <th>Nome do Personagem</th>
+                    <th>Caracteristicas do Personagem</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let pd of service.list">
+                    <td (click)="populateForm(pd)">{{pd.nome}}</td>
+                    <td (click)="populateForm(pd)">{{pd.caracteristicas}}</td>
+                    <td>
+                        <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(pd.id)"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>

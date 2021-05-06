@@ -1,0 +1,18 @@
+<form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)"></form>
+<form>
+    <input type="hidden" [value]="service.formData.id" />
+    <div class="form-group">
+        <label>Nome do Personagem</label>
+        <input class="form-control form-control-lg" placeholder="Nome do Personagem" 
+        [(ngModel)]="service.formData.nome"
+            [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+        <label>Caracteristicas do Personagem</label>
+        <input class="form-control form-control-lg" placeholder="Caracteristicas do Personagem"
+            [(ngModel)]="service.formData.caracteristicas" [ngModelOptions]="{standalone: true}">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit">Salvar</button>
+    </div>
+</form>
