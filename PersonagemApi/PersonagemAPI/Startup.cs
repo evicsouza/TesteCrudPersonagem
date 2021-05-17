@@ -1,3 +1,5 @@
+using AutoMapper;
+using FluentNHibernate.Automapping;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -5,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using personagemAPI.Models;
+using personagemAPI.Model;
 
 namespace personagemAPI
 {
@@ -20,6 +22,16 @@ namespace personagemAPI
 
         public void ConfigureServices(IServiceCollection services)
         {
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new PersonagemProfile());
+            });
+
+            IMapper mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
+            services.AddMvc();
+
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

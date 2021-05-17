@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using personagemAPI.Models;
+using personagemAPI.Model;
+using AutoMapper;
 
 namespace personagemAPI.Controllers
 {
@@ -14,10 +15,12 @@ namespace personagemAPI.Controllers
     public class personagemController : ControllerBase
     {
         private readonly personagemContext _context;
+        private readonly IMapper _mapper;  
 
-        public personagemController(personagemContext context)
+        public personagemController(personagemContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/personagem
