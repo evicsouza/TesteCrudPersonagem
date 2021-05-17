@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2OIZ3DryS1Snl1V/xfIX7LZohdvSi8a/faQEaiA1oemTi6lw51ObA4tboHp4idsTQ5xJnkjN37nF9j1EsI5r8g==",
+  "dgSpecHash": "95/+UDLBmsqts7jCOzSoekQi2JLMYZrpJL8RXX/xTqudWW9e86PalJnPU+KNMnz2v37VG8q5sxjaQaQft4i5CA==",
   "success": true,
   "projectFilePath": "C:\\Users\\eva_v\\CRUDPersonagem\\PersonagemApi\\personagemAPI\\personagemAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\eva_v\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\automapper.collection\\7.0.1\\automapper.collection.7.0.1.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\eva_v\\.nuget\\packages\\domainvalidation\\1.0.0\\domainvalidation.1.0.0.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\fluentnhibernate\\3.1.0\\fluentnhibernate.3.1.0.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\iesi.collections\\4.0.4\\iesi.collections.4.0.4.nupkg.sha512",
@@ -191,5 +192,16 @@
     "C:\\Users\\eva_v\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\eva_v\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'DomainValidation 1.0.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "DomainValidation",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

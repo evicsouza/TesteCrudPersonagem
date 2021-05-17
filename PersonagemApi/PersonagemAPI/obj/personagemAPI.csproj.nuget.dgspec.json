@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "DomainValidation": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "FluentNHibernate": {
               "target": "Package",
               "version": "[3.1.0, )"

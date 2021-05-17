@@ -167,3 +167,4 @@ C:\Users\eva_v\CRUDPersonagem\PersonagemApi\personagemAPI\bin\Debug\net5.0\Iesi.
 C:\Users\eva_v\CRUDPersonagem\PersonagemApi\personagemAPI\bin\Debug\net5.0\NHibernate.dll
 C:\Users\eva_v\CRUDPersonagem\PersonagemApi\personagemAPI\bin\Debug\net5.0\Remotion.Linq.dll
 C:\Users\eva_v\CRUDPersonagem\PersonagemApi\personagemAPI\bin\Debug\net5.0\Remotion.Linq.EagerFetching.dll
+C:\Users\eva_v\CRUDPersonagem\PersonagemApi\personagemAPI\bin\Debug\net5.0\DomainValidation.dll
