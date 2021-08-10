@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using personagemAPI.Model;
+using Steeltoe.Discovery.Client;
+using Steeltoe.Common.Http.Discovery;
 
 namespace personagemAPI
 {
@@ -31,7 +33,12 @@ namespace personagemAPI
             services.AddSingleton(mapper);
 
             services.AddMvc();
-
+            services.AddHttpClient("zuul-server", c =>
+            {
+                c.BaseAddress = new Uri("http://zuul-server/hello/");
+            })
+            .AddHttpMessageHandler();
+            services.AddDiscoveryClient(Configuration);
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -61,6 +68,7 @@ namespace personagemAPI
             }
 
             app.UseRouting();
+            app.UseDiscoveryClient();
 
             app.UseAuthorization();
 
@@ -71,3 +79,4 @@ namespace personagemAPI
         }
     }
 }
+
