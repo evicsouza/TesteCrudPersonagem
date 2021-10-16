@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { PersonagemHomeComponent } from './personagem-home/personagem-home.component';
 import { PersonagemFormComponent } from './personagem-home/personagem-form/personagem-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PersonagemListagemComponent } from './personagem-listagem/personagem-listagem.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PersonagemHomeComponent,
-    PersonagemFormComponent
+    PersonagemFormComponent,
+    PersonagemListagemComponent
   ],
   imports: [
     BrowserModule,
